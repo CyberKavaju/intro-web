@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
   <title>Mi titulo</title>
   <!--<link href="assets/img/favicon.png" rel="icon">-->
 </head>
+
 <body>
   <!--Este es un texto para el que va mantener esta pagina no se ver en el navegador solo el codigo fuente-->
   <header>
@@ -27,37 +29,43 @@
       </ul>
     </nav>
   </header>
-  <main>
-    <section>
-      <div class="slide-text">
-        <h1>Compra tu auto</h1>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-          Voluptatibus voluptatum provident quas perspiciatis obcaecati
-          iste illo reiciendis cumque ducimus beatae. Nesciunt esse ea
-          delectus unde natus provident tempora dolorum harum!</p>
-        <a href="#">Compra ya!</a>
+  <main id="contacto">
+    <h1>Contacto</h1>
+    <h3>Ponte en contacto con nosotros</h3>
+    <form>
+      <div class="row">
+        <div class="col">
+          <div class="form-input">
+            <label for="name">Nombre:</label>
+            <input type="text">
+          </div>
+          <div class="form-input">
+            <label for="tel">Tel.:</label>
+            <input type="tel">
+          </div>
+        </div>
+        <div class="col">
+          <div class="form-input">
+            <label for="surname">Apellido:</label>
+            <input type="text">
+          </div>
+          <div class="form-input">
+            <label for="email">Email:</label>
+            <input type="email">
+          </div>
+        </div>
       </div>
-      <div class="slide-img">
-        <img src="img/car.png" alt="Una imagen de un automovil">
+      <div class="row">
+        <div class="col">
+          <textarea name="mensaje" id="" cols="30" rows="10"></textarea>
+        </div>
       </div>
-    </section>
-    <section>
-      <div class="box">
-        <h3>Productos</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, placeat.</p>
-      </div>
-      <div class="box">
-        <h3>Servicios</h3>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum, id.</p>
-      </div>
-      <div class="box">
-        <h3>Info</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.</p>
-      </div>
-    </section>
+      <input type="submit" value="Enviar">
+    </form>
   </main>
   <footer>
     copyright &copy; 2022 Escuela de Programación
   </footer>
 </body>
+
 </html>
