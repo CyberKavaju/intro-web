@@ -7,45 +7,56 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mi titulo</title>
   <!--<link href="assets/img/favicon.png" rel="icon">-->
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <!--Este es un texto para el que va mantener esta pagina no se ver en el navegador solo el codigo fuente-->
   <header>
-    <h1>Logo</h1>
-    <!-- <h2>Logo</h2> -->
-    <ul>
-      <li> <a href="#">Facebook</a> </li>
-      <li> <a href="#">Twitter</a> </li>
-      <li> <a href="#">Instagram</a> </li>
-    </ul>
-    <nav>
-      <ul>
-        <li> <a href="index.html">Inicio</a> </li>
-        <li> <a href="quien.html">Quienes somos</a> </li>
-        <li> <a href="servicios.html">Servicios</a> </li>
-        <li> <a href="productos.html">Productos</a> </li>
-        <li> <a href="contacto.html">Contacto</a> </li>
+    <div class="container">
+
+      <h1 id="logo">Logo</h1>
+      <!-- <h2>Logo</h2> -->
+      <ul id="social">
+        <li> <a href="#">Facebook</a> </li>
+        <li> <a href="#">Twitter</a> </li>
+        <li> <a href="#">Instagram</a> </li>
       </ul>
-    </nav>
+      <div class="clear"></div>
+      <nav id="main-nav">
+        <ul>
+          <li> <a href="index.html">Inicio</a> </li>
+          <li> <a href="quien.html">Quienes somos</a> </li>
+          <li> <a href="servicios.html">Servicios</a> </li>
+          <li> <a href="productos.html">Productos</a> </li>
+          <li> <a href="contacto.html">Contacto</a> </li>
+        </ul>
+        <div class="clear"></div>
+      </nav>
+    </div>
   </header>
   <main id="servicios">
-    <h1>Servicios</h1>
-    <section id="lavado">
-      <h2>Lavado de auto</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora sint sequi iure deserunt accusamus magnam quam ea error eaque inventore impedit
-        natus repudiandae, voluptate non? Officia necessitatibus eos fugit voluptates.</p>
-      <a href="#">Agenda un lavado</a>
-    </section>
-    <section id="pulido">
-      <h2>Pulido de auto</h2>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat aliquid eius magnam magni accusamus ut deleniti soluta fugit
-         rem sit, minima possimus dicta. Soluta a iure molestias qui ut odio!</p>
-      <a href="#">Agenda un Pulido</a>
-    </section>
+    <div class="container">
+      <h1>Servicios</h1>
+      <section id="lavado">
+        <h2>Lavado de auto</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora sint sequi iure deserunt accusamus magnam quam ea error eaque inventore impedit
+          natus repudiandae, voluptate non? Officia necessitatibus eos fugit voluptates.</p>
+        <a href="#" class="btn btn-1">Agenda un lavado</a>
+      </section>
+      <section id="pulido">
+        <h2>Pulido de auto</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat aliquid eius magnam magni accusamus ut deleniti soluta fugit
+           rem sit, minima possimus dicta. Soluta a iure molestias qui ut odio!</p>
+        <a href="#" class="btn btn-1">Agenda un Pulido</a>
+      </section>
+    </div>
   </main>
   <footer>
-    copyright &copy; 2022 Escuela de Programación
+    <div class="container">
+
+      copyright &copy; 2022 Escuela de Programación
+    </div>
   </footer>
 </body>
 
