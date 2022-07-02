@@ -6,7 +6,12 @@
 .clear{
   clear: both;
 }
-
+.hide{
+  display: none;
+}
+.show{
+  display: block;
+}
 .btn{
   display: inline-block;
   margin: 0.5rem 0;
@@ -50,7 +55,7 @@ footer{
 }
 h1{
   color: #eb232c;
-  margin: 1rem 0;
+  margin: 1rem 1rem;
 }
 h2{
   margin:1rem 0;
@@ -79,7 +84,10 @@ p{
   float: left;
   padding: 5px;
 }
-
+#mobile-nav,
+#mobile-nav-btn{
+  display: none;
+}
 #main-nav{
   background-color: #333;
   border: 1px solid #666;
@@ -140,9 +148,11 @@ main .container{
   display: flex;
   align-items: stretch;
   flex-wrap: wrap;
+  /*width: 100%;*/
 }
 .products .prod-box{
-  width: 20%;
+  /*width: 20%;*/
+  flex: 1 1 33%;
   margin: 1em;
   border: 1px #ccc solid;
   padding: 1rem;
@@ -200,9 +210,37 @@ main .container{
     .contact .contact-form textarea {
       width: 90%;
     }
+    .products{
+      flex-direction: column;
+    }
+    .boxes{
+      flex-direction: column;
+    }
+    .slide-img{
+      display: none;
+    }
 }
 @media only screen and (max-width: 620px) {
   #main-nav{
     display: none;
   }
+  #social{
+    float: left;
+  }
+  #mobile-nav-btn,
+  #mobile-nav{
+    display: block;
+  }
+  #mobile-nav-btn{
+    float: right;
+  }
+    #mobile-nav ul li a{
+      padding: 5px;
+      display: block;
+      text-align: center;
+      border-bottom: 1px #fff solid;
+    }
+        #mobile-nav ul li a:hover{
+          background-color: #41768a;
+        }
 }
